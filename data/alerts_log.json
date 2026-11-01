@@ -1,0 +1,543 @@
+[
+  {
+    "message_id": "ALERT-550105AB",
+    "patient_name": "Senior Resident (Pranith K.)",
+    "recipient": "caretaker@bytelife.ai",
+    "sender": "alerts@bytelife.ai",
+    "timestamp": "2026-10-20 14:52:42",
+    "alert_level": "Critical",
+    "vitals": {
+      "heart_rate": 110.0,
+      "systolic_bp": 78.0,
+      "diastolic_bp": 46.0,
+      "spo2": 95.0,
+      "temperature": 96.2
+    },
+    "override_reason": null,
+    "remedies": [
+      {
+        "title": "Emergency Dispatch",
+        "category": "Immediate Medical Action",
+        "description": "Alert emergency response services (911/112). Patient requires prompt hospital/clinical triage.",
+        "urgent": true
+      }
+    ],
+    "subject": "[CRITICAL HEALTH ALERT] Patient Vitals Anomaly: Senior Resident (Pranith K.) - 2026-10-20 14:52:42",
+    "status": "SIMULATED_DISPATCH",
+    "mode": "simulated_dispatch"
+  },
+  {
+    "message_id": "ALERT-4F5BEBCB",
+    "patient_name": "Senior Resident (Pranith K.)",
+    "recipient": "caretaker@bytelife.ai",
+    "sender": "alerts@bytelife.ai",
+    "timestamp": "2026-10-20 14:52:38",
+    "alert_level": "Critical",
+    "vitals": {
+      "heart_rate": 118.0,
+      "systolic_bp": 134.0,
+      "diastolic_bp": 86.0,
+      "spo2": 93.5,
+      "temperature": 102.6
+    },
+    "override_reason": null,
+    "remedies": [
+      {
+        "title": "Emergency Dispatch",
+        "category": "Immediate Medical Action",
+        "description": "Alert emergency response services (911/112). Patient requires prompt hospital/clinical triage.",
+        "urgent": true
+      }
+    ],
+    "subject": "[CRITICAL HEALTH ALERT] Patient Vitals Anomaly: Senior Resident (Pranith K.) - 2026-10-20 14:52:38",
+    "status": "SIMULATED_DISPATCH",
+    "mode": "simulated_dispatch"
+  },
+  {
+    "message_id": "ALERT-EF8FF707",
+    "patient_name": "Senior Resident (Pranith K.)",
+    "recipient": "caretaker@bytelife.ai",
+    "sender": "alerts@bytelife.ai",
+    "timestamp": "2026-10-20 14:52:31",
+    "alert_level": "Critical",
+    "vitals": {
+      "heart_rate": 104.0,
+      "systolic_bp": 188.0,
+      "diastolic_bp": 122.0,
+      "spo2": 96.0,
+      "temperature": 98.6
+    },
+    "override_reason": null,
+    "remedies": [
+      {
+        "title": "Emergency Dispatch",
+        "category": "Immediate Medical Action",
+        "description": "Alert emergency response services (911/112). Patient requires prompt hospital/clinical triage.",
+        "urgent": true
+      },
+      {
+        "title": "Hypertensive Urgency Management",
+        "category": "Cardiovascular Protocol",
+        "description": "Keep the patient calm and resting in a quiet, low-stimulus environment. Do not administer acute unprescribed anti-hypertensive drugs without physician direct order.",
+        "urgent": true
+      }
+    ],
+    "subject": "[CRITICAL HEALTH ALERT] Patient Vitals Anomaly: Senior Resident (Pranith K.) - 2026-10-20 14:52:31",
+    "status": "SIMULATED_DISPATCH",
+    "mode": "simulated_dispatch"
+  },
+  {
+    "message_id": "ALERT-7EA61D9C",
+    "patient_name": "Critical Resident",
+    "recipient": "emergency_care@bytelife.ai",
+    "sender": "alerts@bytelife.ai",
+    "timestamp": "2026-10-20 14:33:49",
+    "alert_level": "Critical",
+    "vitals": {
+      "heart_rate": 135.0,
+      "systolic_bp": 185.0,
+      "diastolic_bp": 118.0,
+      "spo2": 87.0,
+      "temperature": 103.2
+    },
+    "override_reason": null,
+    "remedies": [
+      {
+        "title": "Emergency Dispatch",
+        "category": "Immediate Medical Action",
+        "description": "Alert emergency response services (911/112). Patient requires prompt hospital/clinical triage.",
+        "urgent": true
+      },
+      {
+        "title": "High Fowler's Positioning & Oxygen Support",
+        "category": "Respiratory First-Aid",
+        "description": "Sit the patient fully upright (75-90 degrees) to maximize lung volume. Administer supplemental oxygen if prescribed equipment is on site.",
+        "urgent": true
+      },
+      {
+        "title": "Hypertensive Urgency Management",
+        "category": "Cardiovascular Protocol",
+        "description": "Keep the patient calm and resting in a quiet, low-stimulus environment. Do not administer acute unprescribed anti-hypertensive drugs without physician direct order.",
+        "urgent": true
+      },
+      {
+        "title": "Arrhythmia Precaution",
+        "category": "Cardiac Protocol",
+        "description": "Have patient remain supine or seated. Avoid sudden postural shifts to prevent fainting (syncope) and check carotid/radial pulse.",
+        "urgent": true
+      },
+      {
+        "title": "Active Cooling & Hydration",
+        "category": "Hyperpyrexia Protocol",
+        "description": "Apply cool, damp washcloths to forehead, axillae, and neck. Offer electrolyte fluids if conscious and prepare antipyretic administration.",
+        "urgent": true
+      }
+    ],
+    "subject": "[CRITICAL HEALTH ALERT] Patient Vitals Anomaly: Critical Resident - 2026-10-20 14:33:49",
+    "status": "SIMULATED_DISPATCH",
+    "mode": "simulated_dispatch"
+  },
+  {
+    "message_id": "ALERT-4EB26529",
+    "patient_name": "Unit Test Patient",
+    "recipient": "caretaker_test@bytelife.ai",
+    "sender": "alerts@bytelife.ai",
+    "timestamp": "2026-10-20 14:33:49",
+    "alert_level": "Critical",
+    "vitals": {
+      "heart_rate": 138,
+      "systolic_bp": 190,
+      "diastolic_bp": 120,
+      "spo2": 88.0,
+      "temperature": 102.5
+    },
+    "override_reason": "Unit test failsafe override",
+    "remedies": [
+      {
+        "title": "Test Action",
+        "description": "Perform triage"
+      }
+    ],
+    "subject": "[CRITICAL HEALTH ALERT] Patient Vitals Anomaly: Unit Test Patient - 2026-10-20 14:33:49",
+    "status": "SIMULATED_DISPATCH",
+    "mode": "simulated_dispatch"
+  },
+  {
+    "message_id": "ALERT-F09374E4",
+    "patient_name": "Critical Resident",
+    "recipient": "emergency_care@bytelife.ai",
+    "sender": "alerts@bytelife.ai",
+    "timestamp": "2026-10-20 14:30:49",
+    "alert_level": "Critical",
+    "vitals": {
+      "heart_rate": 135.0,
+      "systolic_bp": 185.0,
+      "diastolic_bp": 118.0,
+      "spo2": 87.0,
+      "temperature": 103.2
+    },
+    "override_reason": null,
+    "remedies": [
+      {
+        "title": "Emergency Dispatch",
+        "category": "Immediate Medical Action",
+        "description": "Alert emergency response services (911/112). Patient requires prompt hospital/clinical triage.",
+        "urgent": true
+      },
+      {
+        "title": "High Fowler's Positioning & Oxygen Support",
+        "category": "Respiratory First-Aid",
+        "description": "Sit the patient fully upright (75-90 degrees) to maximize lung volume. Administer supplemental oxygen if prescribed equipment is on site.",
+        "urgent": true
+      },
+      {
+        "title": "Hypertensive Urgency Management",
+        "category": "Cardiovascular Protocol",
+        "description": "Keep the patient calm and resting in a quiet, low-stimulus environment. Do not administer acute unprescribed anti-hypertensive drugs without physician direct order.",
+        "urgent": true
+      },
+      {
+        "title": "Arrhythmia Precaution",
+        "category": "Cardiac Protocol",
+        "description": "Have patient remain supine or seated. Avoid sudden postural shifts to prevent fainting (syncope) and check carotid/radial pulse.",
+        "urgent": true
+      },
+      {
+        "title": "Active Cooling & Hydration",
+        "category": "Hyperpyrexia Protocol",
+        "description": "Apply cool, damp washcloths to forehead, axillae, and neck. Offer electrolyte fluids if conscious and prepare antipyretic administration.",
+        "urgent": true
+      }
+    ],
+    "subject": "[CRITICAL HEALTH ALERT] Patient Vitals Anomaly: Critical Resident - 2026-10-20 14:30:49",
+    "status": "SIMULATED_DISPATCH",
+    "mode": "simulated_dispatch"
+  },
+  {
+    "message_id": "ALERT-4392A239",
+    "patient_name": "Unit Test Patient",
+    "recipient": "caretaker_test@bytelife.ai",
+    "sender": "alerts@bytelife.ai",
+    "timestamp": "2026-10-20 14:30:48",
+    "alert_level": "Critical",
+    "vitals": {
+      "heart_rate": 138,
+      "systolic_bp": 190,
+      "diastolic_bp": 120,
+      "spo2": 88.0,
+      "temperature": 102.5
+    },
+    "override_reason": "Unit test failsafe override",
+    "remedies": [
+      {
+        "title": "Test Action",
+        "description": "Perform triage"
+      }
+    ],
+    "subject": "[CRITICAL HEALTH ALERT] Patient Vitals Anomaly: Unit Test Patient - 2026-10-20 14:30:48",
+    "status": "SIMULATED_DISPATCH",
+    "mode": "simulated_dispatch"
+  },
+  {
+    "message_id": "ALERT-CDB5731E",
+    "patient_name": "Critical Resident",
+    "recipient": "emergency_care@bytelife.ai",
+    "sender": "alerts@bytelife.ai",
+    "timestamp": "2026-10-20 14:27:25",
+    "alert_level": "Critical",
+    "vitals": {
+      "heart_rate": 135.0,
+      "systolic_bp": 185.0,
+      "diastolic_bp": 118.0,
+      "spo2": 87.0,
+      "temperature": 103.2
+    },
+    "override_reason": null,
+    "remedies": [
+      {
+        "title": "Emergency Dispatch",
+        "category": "Immediate Medical Action",
+        "description": "Alert emergency response services (911/112). Patient requires prompt hospital/clinical triage.",
+        "urgent": true
+      },
+      {
+        "title": "High Fowler's Positioning & Oxygen Support",
+        "category": "Respiratory First-Aid",
+        "description": "Sit the patient fully upright (75-90 degrees) to maximize lung volume. Administer supplemental oxygen if prescribed equipment is on site.",
+        "urgent": true
+      },
+      {
+        "title": "Hypertensive Urgency Management",
+        "category": "Cardiovascular Protocol",
+        "description": "Keep the patient calm and resting in a quiet, low-stimulus environment. Do not administer acute unprescribed anti-hypertensive drugs without physician direct order.",
+        "urgent": true
+      },
+      {
+        "title": "Arrhythmia Precaution",
+        "category": "Cardiac Protocol",
+        "description": "Have patient remain supine or seated. Avoid sudden postural shifts to prevent fainting (syncope) and check carotid/radial pulse.",
+        "urgent": true
+      },
+      {
+        "title": "Active Cooling & Hydration",
+        "category": "Hyperpyrexia Protocol",
+        "description": "Apply cool, damp washcloths to forehead, axillae, and neck. Offer electrolyte fluids if conscious and prepare antipyretic administration.",
+        "urgent": true
+      }
+    ],
+    "subject": "[CRITICAL HEALTH ALERT] Patient Vitals Anomaly: Critical Resident - 2026-10-20 14:27:25",
+    "status": "SIMULATED_DISPATCH",
+    "mode": "simulated_dispatch"
+  },
+  {
+    "message_id": "ALERT-48FBE5DC",
+    "patient_name": "Unit Test Patient",
+    "recipient": "caretaker_test@bytelife.ai",
+    "sender": "alerts@bytelife.ai",
+    "timestamp": "2026-10-20 14:27:24",
+    "alert_level": "Critical",
+    "vitals": {
+      "heart_rate": 138,
+      "systolic_bp": 190,
+      "diastolic_bp": 120,
+      "spo2": 88.0,
+      "temperature": 102.5
+    },
+    "override_reason": "Unit test failsafe override",
+    "remedies": [
+      {
+        "title": "Test Action",
+        "description": "Perform triage"
+      }
+    ],
+    "subject": "[CRITICAL HEALTH ALERT] Patient Vitals Anomaly: Unit Test Patient - 2026-10-20 14:27:24",
+    "status": "SIMULATED_DISPATCH",
+    "mode": "simulated_dispatch"
+  },
+  {
+    "message_id": "ALERT-A80AB101",
+    "patient_name": "Pranith Kumar (Critical Simulation)",
+    "recipient": "emergency_caretaker@bytelife.ai",
+    "sender": "alerts@bytelife.ai",
+    "timestamp": "2026-10-20 13:14:44",
+    "alert_level": "Critical",
+    "vitals": {
+      "heart_rate": 136.0,
+      "systolic_bp": 188.0,
+      "diastolic_bp": 122.0,
+      "spo2": 87.5,
+      "temperature": 102.8
+    },
+    "override_reason": null,
+    "remedies": [
+      {
+        "title": "Emergency Dispatch",
+        "category": "Immediate Medical Action",
+        "description": "Alert emergency response services (911/112). Patient requires prompt hospital/clinical triage.",
+        "urgent": true
+      },
+      {
+        "title": "High Fowler's Positioning & Oxygen Support",
+        "category": "Respiratory First-Aid",
+        "description": "Sit the patient fully upright (75-90 degrees) to maximize lung volume. Administer supplemental oxygen if prescribed equipment is on site.",
+        "urgent": true
+      },
+      {
+        "title": "Hypertensive Urgency Management",
+        "category": "Cardiovascular Protocol",
+        "description": "Keep the patient calm and resting in a quiet, low-stimulus environment. Do not administer acute unprescribed anti-hypertensive drugs without physician direct order.",
+        "urgent": true
+      },
+      {
+        "title": "Arrhythmia Precaution",
+        "category": "Cardiac Protocol",
+        "description": "Have patient remain supine or seated. Avoid sudden postural shifts to prevent fainting (syncope) and check carotid/radial pulse.",
+        "urgent": true
+      }
+    ],
+    "subject": "[CRITICAL HEALTH ALERT] Patient Vitals Anomaly: Pranith Kumar (Critical Simulation) - 2026-10-20 13:14:44",
+    "status": "SIMULATED_DISPATCH",
+    "mode": "simulated_dispatch"
+  },
+  {
+    "message_id": "ALERT-D260F1DD",
+    "patient_name": "Critical Resident",
+    "recipient": "emergency_care@bytelife.ai",
+    "sender": "alerts@bytelife.ai",
+    "timestamp": "2026-10-20 13:10:36",
+    "alert_level": "Critical",
+    "vitals": {
+      "heart_rate": 135.0,
+      "systolic_bp": 185.0,
+      "diastolic_bp": 118.0,
+      "spo2": 87.0,
+      "temperature": 103.2
+    },
+    "override_reason": null,
+    "remedies": [
+      {
+        "title": "Emergency Dispatch",
+        "category": "Immediate Medical Action",
+        "description": "Alert emergency response services (911/112). Patient requires prompt hospital/clinical triage.",
+        "urgent": true
+      },
+      {
+        "title": "High Fowler's Positioning & Oxygen Support",
+        "category": "Respiratory First-Aid",
+        "description": "Sit the patient fully upright (75-90 degrees) to maximize lung volume. Administer supplemental oxygen if prescribed equipment is on site.",
+        "urgent": true
+      },
+      {
+        "title": "Hypertensive Urgency Management",
+        "category": "Cardiovascular Protocol",
+        "description": "Keep the patient calm and resting in a quiet, low-stimulus environment. Do not administer acute unprescribed anti-hypertensive drugs without physician direct order.",
+        "urgent": true
+      },
+      {
+        "title": "Arrhythmia Precaution",
+        "category": "Cardiac Protocol",
+        "description": "Have patient remain supine or seated. Avoid sudden postural shifts to prevent fainting (syncope) and check carotid/radial pulse.",
+        "urgent": true
+      },
+      {
+        "title": "Active Cooling & Hydration",
+        "category": "Hyperpyrexia Protocol",
+        "description": "Apply cool, damp washcloths to forehead, axillae, and neck. Offer electrolyte fluids if conscious and prepare antipyretic administration.",
+        "urgent": true
+      }
+    ],
+    "subject": "[CRITICAL HEALTH ALERT] Patient Vitals Anomaly: Critical Resident - 2026-10-20 13:10:36",
+    "status": "SIMULATED_DISPATCH",
+    "mode": "simulated_dispatch"
+  },
+  {
+    "message_id": "ALERT-BA4AEE16",
+    "patient_name": "Unit Test Patient",
+    "recipient": "caretaker_test@bytelife.ai",
+    "sender": "alerts@bytelife.ai",
+    "timestamp": "2026-10-20 13:10:36",
+    "alert_level": "Critical",
+    "vitals": {
+      "heart_rate": 138,
+      "systolic_bp": 190,
+      "diastolic_bp": 120,
+      "spo2": 88.0,
+      "temperature": 102.5
+    },
+    "override_reason": "Unit test failsafe override",
+    "remedies": [
+      {
+        "title": "Test Action",
+        "description": "Perform triage"
+      }
+    ],
+    "subject": "[CRITICAL HEALTH ALERT] Patient Vitals Anomaly: Unit Test Patient - 2026-10-20 13:10:36",
+    "status": "SIMULATED_DISPATCH",
+    "mode": "simulated_dispatch"
+  },
+  {
+    "message_id": "ALERT-6874DCE8",
+    "patient_name": "Critical Resident",
+    "recipient": "emergency_care@bytelife.ai",
+    "sender": "alerts@bytelife.ai",
+    "timestamp": "2026-10-20 13:05:27",
+    "alert_level": "Critical",
+    "vitals": {
+      "heart_rate": 135.0,
+      "systolic_bp": 185.0,
+      "diastolic_bp": 118.0,
+      "spo2": 87.0,
+      "temperature": 103.2
+    },
+    "override_reason": null,
+    "remedies": [
+      {
+        "title": "Emergency Dispatch",
+        "category": "Immediate Medical Action",
+        "description": "Alert emergency response services (911/112). Patient requires prompt hospital/clinical triage.",
+        "urgent": true
+      },
+      {
+        "title": "High Fowler's Positioning & Oxygen Support",
+        "category": "Respiratory First-Aid",
+        "description": "Sit the patient fully upright (75-90 degrees) to maximize lung volume. Administer supplemental oxygen if prescribed equipment is on site.",
+        "urgent": true
+      },
+      {
+        "title": "Hypertensive Urgency Management",
+        "category": "Cardiovascular Protocol",
+        "description": "Keep the patient calm and resting in a quiet, low-stimulus environment. Do not administer acute unprescribed anti-hypertensive drugs without physician direct order.",
+        "urgent": true
+      },
+      {
+        "title": "Arrhythmia Precaution",
+        "category": "Cardiac Protocol",
+        "description": "Have patient remain supine or seated. Avoid sudden postural shifts to prevent fainting (syncope) and check carotid/radial pulse.",
+        "urgent": true
+      },
+      {
+        "title": "Active Cooling & Hydration",
+        "category": "Hyperpyrexia Protocol",
+        "description": "Apply cool, damp washcloths to forehead, axillae, and neck. Offer electrolyte fluids if conscious and prepare antipyretic administration.",
+        "urgent": true
+      }
+    ],
+    "subject": "[CRITICAL HEALTH ALERT] Patient Vitals Anomaly: Critical Resident - 2026-10-20 13:05:27",
+    "status": "SIMULATED_DISPATCH",
+    "mode": "simulated_dispatch"
+  },
+  {
+    "message_id": "ALERT-FAD7061F",
+    "patient_name": "Unit Test Patient",
+    "recipient": "caretaker_test@bytelife.ai",
+    "sender": "alerts@bytelife.ai",
+    "timestamp": "2026-10-20 13:05:27",
+    "alert_level": "Critical",
+    "vitals": {
+      "heart_rate": 138,
+      "systolic_bp": 190,
+      "diastolic_bp": 120,
+      "spo2": 88.0,
+      "temperature": 102.5
+    },
+    "override_reason": "Unit test failsafe override",
+    "remedies": [
+      {
+        "title": "Test Action",
+        "description": "Perform triage"
+      }
+    ],
+    "subject": "[CRITICAL HEALTH ALERT] Patient Vitals Anomaly: Unit Test Patient - 2026-10-20 13:05:27",
+    "status": "SIMULATED_DISPATCH",
+    "mode": "simulated_dispatch"
+  },
+  {
+    "message_id": "ALERT-B100F074",
+    "patient_name": "Pranith Kumar",
+    "recipient": "caretaker@bytelife.ai",
+    "sender": "alerts@bytelife.ai",
+    "timestamp": "2026-10-20 12:56:28",
+    "alert_level": "Critical",
+    "vitals": {
+      "heart_rate": 138,
+      "systolic_bp": 185,
+      "diastolic_bp": 115,
+      "spo2": 88.5,
+      "temperature": 102.8
+    },
+    "override_reason": "SpO2 < 90% and Systolic BP >= 180 mmHg",
+    "remedies": [
+      {
+        "title": "Oxygen Support",
+        "description": "Administer supplemental O2 and position patient upright."
+      },
+      {
+        "title": "Call Emergency",
+        "description": "Dispatch emergency ambulance immediately (BP crisis & hypoxemia)."
+      }
+    ],
+    "subject": "[CRITICAL HEALTH ALERT] Patient Vitals Anomaly: Pranith Kumar - 2026-10-20 12:56:28",
+    "status": "SIMULATED_DISPATCH",
+    "mode": "simulated_dispatch"
+  }
+]

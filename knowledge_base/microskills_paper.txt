@@ -1,0 +1,210 @@
+--- [Page 1] ---
+International Journal of Innovative Research in Science 
+ Engineering and Technology (IJIRSET) 
+(A Monthly, Peer Reviewed, Refereed, Scholarly Indexed, Open Access Journal) 
+ 
+         Impact Factor: 8.699 Volume 15, Issue 3, March 2026
+
+--- [Page 2] ---
+|www.ijirset.com |A Monthly, Peer Reviewed & Refereed Journal| e-ISSN: 2319-8753| p-ISSN: 2347-6710| 
+Volume 15, Issue 3, March 2026 
+|DOI: 10.15680/IJIRSET.2026.1503130| 
+IJIRSET©2026                                      |     An ISO 9001:2008 Certified Journal   |                                        2990 
+Detecting Micro Skills and Unlocking  
+Macro Careers 
+ 
+Mr K Kiran Babu1, B Sreeja2, K Ganesh3, M Govardhan4, D Pranith5 
+Associate Professor, Department of CSE (Data Science), ACE Engineering College, Hyderabad, Telangana, India1 
+IV B. Tech, Department of CSE (Data Science), ACE Engineering College, Hyderabad,  Telangana, India2,3,4,5 
+ 
+ABSTRACT: The “Detecting Micro Skills and Unlocking Macro Careers ” system is an AI-driven platform designed to 
+analyse candidate skills and provide career recommendations based on their tech nical abilities. Traditional recruitment 
+systems rely heavily on keyword-based resume filtering, which often fails to ac curately evaluate candidate potential. 
+The proposed system uses Natural Language Processing (NLP) and Machine Lear ning (ML) techniques to extract skills 
+from resumes, coding platforms, and project data to build a detailed skill profile. The system performs skill-gap 
+analysis and recommends relevant courses, projects, and career paths to improve employability. Additionally, it 
+generates ATS-optimized resumes and provides real-time job recommendations. The p latform includes an interactive 
+dashboard that visualizes candidate skills, strengths, weaknesses, and career read iness scores. Overall, the system helps 
+candidates enhance their career opportunities while assisting recruiters in identifying suitable candidates efficiently. 
+ 
+KEYWORDS: Skill Gap Analysis, Resume Parsing, NLP, Machine Learning, Career Recommendation, ATS 
+Optimization, Dashboard Analytics. 
+ 
+I. INTRODUCTION 
+ 
+In today’s competitive job market, identifying the right skills required for a particular career path is a major challenge 
+for students and job seekers. Many candidates possess valuable skills but  fail to present them effectively due to 
+limitations in traditional resume screening systems. Most recruitment platforms rely o n keyword-based Application 
+Tracking Systems (ATS), which often overlook capable candidates if their resumes  do not contain specific keywords. 
+The main objective of the Detecting Micro Skills and Unlocking Macro Careers  system is to address these 
+challenges by analyzing candidate skills using Artificial Intelligence techniques. The system ex tracts micro-skills from 
+resumes and coding platforms, analyzes them using NLP and machine learning tech niques, and maps them to suitable 
+job roles. 
+ 
+By identifying skill gaps and recommending appropriate learning paths, the system helps candidates improve their 
+employability and align their skills with industry requirements. 
+ 
+II. EXISTING SYSTEM 
+ 
+In today’s competitive job market, identifying the right skills required for a particular career path is a major challenge 
+for students and job seekers. Many candidates possess valuable skills but  fail to present them effectively due to 
+limitations in traditional resume screening systems. Most recruitment platforms rely o n keyword-based Application 
+Tracking Systems (ATS), which often overlook capable candidates if their resumes do not contain specific keyword . 
+The main objective of the Detecting Micro Skills and Unlocking Macro Careers  system is to address these 
+challenges by analyzing candidate skills using Artificial Intelligence techniques. The system ex tracts micro-skills from 
+resumes and coding platforms, analyzes them using NLP and machine learning tech niques, and maps them to suitable 
+job roles. 
+ 
+By identifying skill gaps and recommending appropriate learning paths, the system helps candidates improve their 
+employability and align their skills with industry requirements.
+
+--- [Page 3] ---
+|www.ijirset.com |A Monthly, Peer Reviewed & Refereed Journal| e-ISSN: 2319-8753| p-ISSN: 2347-6710| 
+Volume 15, Issue 3, March 2026 
+|DOI: 10.15680/IJIRSET.2026.1503130| 
+IJIRSET©2026                                      |     An ISO 9001:2008 Certified Journal   |                                        2991 
+A. Drawbacks of Existing System 
+ 
+1. Heavy dependence on keyword-based resume filtering. 
+2. Lack of accurate skill-gap analysis. 
+3. Limited personalization in career recommendations. 
+4. No integration with coding platforms like GitHub or LeetCode. 
+5. Candidates do not receive feedback to improve their employability. 
+ 
+III. PROPOSED SYSTEM 
+ 
+The proposed system is an AI-powered career intelligence platform designed to analyze candidate skills and 
+recommend suitable career opportunities. The system collects candidate data from  resumes and coding platforms, 
+processes the data using NLP techniques, and extracts technical and soft skills. 
+The extracted skills are analyzed to determine the candidate ’s primary domain, strengths, and missing competencies. 
+Based on this analysis, the system provides personalized career recommendatio ns, generates ATS-friendly resumes, 
+and suggests job opportunities.The system also includes an AI-based mock interview module and a visualization 
+dashboard that helps candidates track their skill progress and readiness for industry roles. 
+ 
+A. Advantages of Proposed System 
+ 
+1. Accurate Skill Detection: Uses NLP techniques to extract skills from resumes and coding platforms. 
+2. Skill Gap Analysis: Identifies missing skills required for target job roles. 
+3. Career Recommendations: Suggests courses, projects, and certifications for improvement. 
+4. ATS Resume Optimization: Helps candidates create resumes that pass ATS filters. 
+5. Interactive Dashboard: Provides visual insights into skill strengths and weaknesses. 
+6. Job Matching: Recommends suitable job opportunities based on candidate skills. 
+ 
+IV. METHODOLOGY 
+ 
+A. Data Collection and Preprocessing Module 
+This module collects candidate data from resumes, GitHub repositories, and coding platfor ms. The system extracts raw 
+text from uploaded resumes and cleans the data by removing unnecessary characters, stop words, and formatting errors. 
+ 
+B. Skill Extraction Module 
+The system uses Natural Language Processing techniques such as Named Entity Recognition (NER) to extract technical 
+skills, tools, and programming languages from the resume content. 
+ 
+C. Skill Classification Module 
+Extracted skills are categorized into different technical domains such as Web Developmen t, Data Science, Artificial 
+Intelligence, and Cloud Computing. 
+ 
+D. Skill Gap Detection Module 
+The candidate’s skills are compared with predefined job role requirements to identify missing or weak skills. 
+ 
+E. Recommendation Module 
+Based on the skill gap analysis, the system recommends relevant courses, pr ojects, certifications, and job opportunities 
+to help candidates improve their employability.
+
+--- [Page 4] ---
+|www.ijirset.com |A Monthly, Peer Reviewed & Refereed Journal| e-ISSN: 2319-8753| p-ISSN: 2347-6710| 
+Volume 15, Issue 3, March 2026 
+|DOI: 10.15680/IJIRSET.2026.1503130| 
+IJIRSET©2026                                      |     An ISO 9001:2008 Certified Journal   |                                        2992 
+V. SYSTEM ARCHITECTURE 
+ 
+The system follows a modular architecture consisting of a frontend interface, back end processing modules, machine 
+learning components, and a database. The frontend allows users to upload resumes a nd interact with the system 
+dashboard. The backend processes resume data, performs skill extraction, and generates career recommendations. 
+Machine learning models analyze the extracted data and generate skill-gap reports, while the database stores candidate 
+profiles and skill information. The architecture ensures efficient data processing an d seamless integration between 
+different system components. Fig1. Shows the System Architecture Diagram. 
+ 
+ 
+ 
+VI. RESULTS AND OUTPUT 
+ 
+[1] Step 1: Resume Upload 
+The system allows users to upload resumes in PDF or DOCX format. The uploaded r esume is processed and converted 
+into structured text data.  
+Fig 2. Shows uploading the resume in pdf format.
+
+--- [Page 5] ---
+|www.ijirset.com |A Monthly, Peer Reviewed & Refereed Journal| e-ISSN: 2319-8753| p-ISSN: 2347-6710| 
+Volume 15, Issue 3, March 2026 
+|DOI: 10.15680/IJIRSET.2026.1503130| 
+IJIRSET©2026                                      |     An ISO 9001:2008 Certified Journal   |                                        2993 
+[2] Step 2: Skill Extraction 
+The system analyzes the resume content and extracts technical and soft skills using NLP techn iques. 
+ 
+Fig3. Shows Extracting the skills from the resume uploaded and from the links that are uploaded and maintaining a 
+skill architecture chart. 
+ 
+ 
+ 
+[3] Step 3: Skill Analysis Dashboard 
+The dashboard displays candidate skills, domain strengths, and proficiency scores through visual charts and graphs. 
+ 
+Fig4. Shows the gap in skills and where to improve.
+
+--- [Page 6] ---
+|www.ijirset.com |A Monthly, Peer Reviewed & Refereed Journal| e-ISSN: 2319-8753| p-ISSN: 2347-6710| 
+Volume 15, Issue 3, March 2026 
+|DOI: 10.15680/IJIRSET.2026.1503130| 
+IJIRSET©2026                                      |     An ISO 9001:2008 Certified Journal   |                                        2994 
+[4] Step 4: Skill Gap Identification 
+ 
+Fig6. Shows the system compares the candidate’s skills with job role requirements and highlights missing skills. 
+ 
+ 
+ 
+[5] Step 5: Career Recommendations 
+ Based on the analysis, the system suggests relevant courses, projects, certifications , and job opportunities to improve 
+career prospects.  
+ 
+Fig 7. Shows the Job openings. 
+ 
+Fig8. Shows the candidates proficiency using visual charts.
+
+--- [Page 7] ---
+|www.ijirset.com |A Monthly, Peer Reviewed & Refereed Journal| e-ISSN: 2319-8753| p-ISSN: 2347-6710| 
+Volume 15, Issue 3, March 2026 
+|DOI: 10.15680/IJIRSET.2026.1503130| 
+IJIRSET©2026                                      |     An ISO 9001:2008 Certified Journal   |                                        2995 
+V. CONCLUSION & FUTURE SCOPE 
+ 
+The Detecting Micro Skills and Unlocking Macro Careers  system provides an intelligent solution for analyzing 
+candidate skills and guiding them toward suitable career opportunities. By integratin g NLP and machine learning 
+techniques, the platform accurately identifies skill gaps and provides personalized recommendations. 
+ 
+The system improves employability by helping candidates understand their stren gths and weaknesses while enabling 
+recruiters to identify skilled candidates more efficiently. 
+ 
+Future improvements can include integrating advanced deep learning models, adding  support for multiple languages, 
+and deploying the system on cloud platforms for scalability and real-tim e job market integration. 
+ 
+REFERENCES 
+ 
+[1] Devlin, J., Chang, M.-W., Lee, K., & Toutanova, K. (2019). 
+BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. NAACL-HLT. 
+(Used for résumé parsing, skill extraction, and embeddings.) 
+[2] Reimers, N., & Gurevych, I. (2019). 
+Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks. EMNLP/IJCNLP. (Used for skill-gap analysis, 
+semantic similarity, role matching) 
+[3] Bird, S., Klein, E., & Loper, E. (2009). 
+Natural Language Processing with Python. O ’Reilly Media. (Foundational reference for NLP preprocessing, 
+tokenization, extraction.) 
+[4] GitHub Inc. (2024). 
+GitHub API Documentation. https://docs.github.com 
+(Used for collecting coding activity data: commits, repos, contributions.) 
+[5] LeetCode (2024). 
+LeetCode API & Problem Data. https://leetcode.com 
+(Used for evaluating coding consistency, difficulty-level performance) 
+[6]F. Kelleher, J. D., Mac Namee, B., & D’Arcy, A. (2020). 
+Fundamentals of Machine Learning for Predictive Data Analytics. MIT Press. (Used for ML classification of domains and 
+recommendation generation

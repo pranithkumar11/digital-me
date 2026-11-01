@@ -1,0 +1,11 @@
+# Major Projects & Research Publications
+
+1. Early Detection and Intervention for the Aging Population (Byte Life)
+- Overview: Co-authored a mini-project (2025-2026) focused on real-time health monitoring for the elderly using vital signs (heart rate, blood pressure, SpO2, and body temperature)[cite: 7, 12, 16].
+- Tech Stack: Python, Flask, Scikit-learn, Pandas, NumPy, HTML, CSS, and JavaScript[cite: 23].
+- Functionality: Uses a Machine Learning model (Random Forest / Hybrid classifier) to predict normal, abnormal, or critical health conditions and automatically triggers email alerts to caregivers with recommended remedies and over-the-counter medicine suggestions[cite: 22, 25, 40].
+
+2. Detecting Micro Skills and Unlocking Macro Careers
+- Overview: Co-authored a published research paper in the International Journal of Innovative Research in Science, Engineering and Technology (IJIRSET, March 2026)[cite: 49].
+- Tech Stack: Natural Language Processing (NLP), Machine Learning, and Python[cite: 49].
+- Functionality: An AI-driven platform designed to parse resumes, extract technical micro-skills from GitHub and LeetCode profiles, perform skill-gap analysis, and provide personalized career recommendations and ATS-optimized summaries[cite: 49, 50].

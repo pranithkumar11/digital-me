@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Me // Pranith Kumar Dupuguntla</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="cyber-theme">
+  <!-- Interactive Ambient Cyber Canvas (Starfield / Data Flow) -->
+  <canvas id="ambient-canvas" class="ambient-canvas"></canvas>
+  <div class="cyber-grid-overlay"></div>
+  <div class="glow-orb glow-orb-1"></div>
+  <div class="glow-orb glow-orb-2"></div>
+
+  <div class="app-layout">
+    <!-- Top Cyberpunk Header -->
+    <header class="app-header">
+      <div class="brand-section">
+        <div class="brand-icon">
+          <span class="core-dot"></span>
+        </div>
+        <div class="brand-meta">
+          <h1 class="brand-title">DIGITAL ME <span class="brand-version">v2.5 // NEURAL TWIN</span></h1>
+          <p class="brand-sub">PRANITH KUMAR DUPUGUNTLA &bull; DATA ANALYST & AI SYSTEMS ARCHITECT</p>
+        </div>
+      </div>
+
+      <div class="system-status-pills">
+        <div class="status-pill" id="pill-rag" title="ChromaDB + FastEmbed ONNX">
+          <span class="status-indicator-dot dot-active"></span>
+          <span class="pill-label">RAG</span>
+          <span class="pill-val">CHROMADB</span>
+        </div>
+        <div class="status-pill" id="pill-llm" title="Ollama / Llama 3 First-Person Inference">
+          <span class="status-indicator-dot dot-active" id="dot-llm"></span>
+          <span class="pill-label">LLM</span>
+          <span class="pill-val" id="val-llm">LLAMA 3</span>
+        </div>
+        <div class="status-pill" id="pill-tts" title="Edge-TTS Neural Voice Engine">
+          <span class="status-indicator-dot dot-active" id="dot-tts"></span>
+          <span class="pill-label">VOICE</span>
+          <span class="pill-val">EDGE-TTS</span>
+        </div>
+        <button class="sfx-toggle-btn" id="sfx-toggle" title="Toggle Futuristic Cyber UI Sound FX">
+          <span id="sfx-icon">&#128266;</span> SFX: ON
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Interactive Grid -->
+    <main class="main-content">
+      <!-- Left Hero Column: Animated Avatar & Biometric Hub -->
+      <aside class="avatar-panel">
+        <div class="avatar-card">
+          <!-- Avatar Mode Switcher Tabs -->
+          <div class="avatar-mode-switcher">
+            <button class="avatar-tab-btn active" data-mode="cyber-twin" title="Cybernetic Neural Twin">
+              <span>&#129302;</span> CYBER
+            </button>
+            <button class="avatar-tab-btn" data-mode="quantum-core" title="Quantum AI Reactor Core">
+              <span>&#9883;</span> CORE
+            </button>
+            <button class="avatar-tab-btn" data-mode="holo-portrait" title="Holographic Portrait / Custom Photo">
+              <span>&#128100;</span> PHOTO
+            </button>
+          </div>
+
+          <!-- Main Interactive Avatar Frame & Canvas Visualizer -->
+          <div class="avatar-frame-container" id="avatar-container">
+            <!-- 360-Degree Radial Audio Spectrum Canvas -->
+            <canvas id="avatar-radial-canvas" width="260" height="260" class="avatar-radial-canvas"></canvas>
+
+            <!-- Holographic Laser Scanner Beam -->
+            <div class="laser-scanner" id="laser-scanner"></div>
+
+            <!-- Concentric Pulse Rings -->
+            <div class="pulse-ring ring-outer"></div>
+            <div class="pulse-ring ring-middle"></div>
+            <div class="pulse-ring ring-inner"></div>
+
+            <!-- Avatar Core Graphic Container -->
+            <div class="avatar-core" id="avatar-core">
+              
+              <!-- 1. CYBER TWIN MODE (Default) -->
+              <div class="avatar-view active" id="view-cyber-twin">
+                <svg viewBox="0 0 120 120" class="avatar-svg" id="avatar-svg">
+                  <defs>
+                    <linearGradient id="neonCyanBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#00f0ff" />
+                      <stop offset="50%" stop-color="#0070f3" />
+                      <stop offset="100%" stop-color="#7928ca" />
+                    </linearGradient>
+                    <radialGradient id="faceGrad" cx="50%" cy="50%" r="50%">
+                      <stop offset="0%" stop-color="#112240" />
+                      <stop offset="70%" stop-color="#091427" />
+                      <stop offset="100%" stop-color="#030814" />
+                    </radialGradient>
+                    <filter id="neonBlur" x="-30%" y="-30%" width="160%" height="160%">
+                      <feGaussianBlur stdDeviation="3.5" result="glow" />
+                      <feMerge>
+                        <feMergeNode in="glow" />
+                        <feMergeNode in="SourceGraphic" />
+                      </feMerge>
+                    </filter>
+                  </defs>
+
+                  <!-- Holographic Cyber Head Silhouette -->
+                  <polygon points="60,18 84,28 92,52 86,84 60,102 34,84 28,52 36,28" 
+                           fill="url(#faceGrad)" stroke="url(#neonCyanBlue)" stroke-width="2" filter="url(#neonBlur)" class="face-contour"/>
+
+                  <!-- Internal Circuit Traces -->
+                  <path d="M 40 32 L 60 22 L 80 32" stroke="#00f0ff" stroke-width="1.2" stroke-dasharray="2 2" fill="none" opacity="0.7"/>
+                  <path d="M 32 54 L 46 62 L 60 62 L 74 62 L 88 54" stroke="rgba(0, 240, 255, 0.5)" stroke-width="1" fill="none"/>
+                  <line x1="60" y1="22" x2="60" y2="45" stroke="#00f0ff" stroke-width="1" opacity="0.6"/>
+
+                  <!-- Cyber Eyebrows -->
+                  <line x1="40" y1="44" x2="52" y2="46" stroke="#00f0ff" stroke-width="2" stroke-linecap="round" class="eyebrow"/>
+                  <line x1="80" y1="44" x2="68" y2="46" stroke="#00f0ff" stroke-width="2" stroke-linecap="round" class="eyebrow"/>
+
+                  <!-- Animated Blinking / Tracking Cyber Eyes -->
+                  <g class="eye-group eye-left" id="eye-left">
+                    <ellipse cx="46" cy="51" rx="6.5" ry="4" fill="#030b17" stroke="#00f0ff" stroke-width="1.5"/>
+                    <circle cx="46" cy="51" r="2.8" fill="#00f0ff" class="pupil pupil-left"/>
+                    <circle cx="45" cy="50" r="1" fill="#ffffff"/>
+                  </g>
+                  <g class="eye-group eye-right" id="eye-right">
+                    <ellipse cx="74" cy="51" rx="6.5" ry="4" fill="#030b17" stroke="#00f0ff" stroke-width="1.5"/>
+                    <circle cx="74" cy="51" r="2.8" fill="#00f0ff" class="pupil pupil-right"/>
+                    <circle cx="73" cy="50" r="1" fill="#ffffff"/>
+                  </g>
+
+                  <!-- Nose Bridge & Geometric Lines -->
+                  <polygon points="60,49 57,66 63,66" fill="rgba(0, 240, 255, 0.15)" stroke="#00f0ff" stroke-width="1"/>
+
+                  <!-- Reactive Talking Mouth Geometry (Modulated by Audio) -->
+                  <g class="mouth-group">
+                    <path id="avatar-mouth" d="M 48 78 Q 60 78 72 78" 
+                          stroke="#00f0ff" stroke-width="2.5" stroke-linecap="round" fill="none" class="mouth-path" />
+                    <!-- Mouth inner glow when speaking -->
+                    <ellipse id="avatar-mouth-glow" cx="60" cy="78" rx="0" ry="0" fill="rgba(0, 240, 255, 0.75)" class="mouth-glow"/>
+                  </g>
+
+                  <!-- Cheek Audio Frequency Micro-Bars -->
+                  <g class="cheek-bars-left" opacity="0.8">
+                    <rect x="33" y="66" width="1.5" height="4" fill="#00f0ff" class="cheek-bar cb-1"/>
+                    <rect x="36" y="64" width="1.5" height="8" fill="#00f0ff" class="cheek-bar cb-2"/>
+                    <rect x="39" y="67" width="1.5" height="5" fill="#00f0ff" class="cheek-bar cb-3"/>
+                  </g>
+                  <g class="cheek-bars-right" opacity="0.8">
+                    <rect x="85" y="66" width="1.5" height="4" fill="#00f0ff" class="cheek-bar cb-1"/>
+                    <rect x="82" y="64" width="1.5" height="8" fill="#00f0ff" class="cheek-bar cb-2"/>
+                    <rect x="79" y="67" width="1.5" height="5" fill="#00f0ff" class="cheek-bar cb-3"/>
+                  </g>
+                </svg>
+              </div>
+
+              <!-- 2. QUANTUM AI CORE MODE -->
+              <div class="avatar-view" id="view-quantum-core">
+                <div class="quantum-core-wrap">
+                  <div class="core-gyro gyro-1"></div>
+                  <div class="core-gyro gyro-2"></div>
+                  <div class="core-gyro gyro-3"></div>
+                  <div class="core-plasma">
+                    <div class="plasma-ball"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 3. HOLOGRAPHIC PHOTO MODE -->
+              <div class="avatar-view" id="view-holo-portrait">
+                <div class="holo-photo-wrap" id="photo-dropzone">
+                  <img src="" alt="Pranith Kumar Dupuguntla" id="custom-avatar-img" class="custom-avatar-img" style="display: none;">
+                  <div class="photo-placeholder" id="photo-placeholder">
+                    <span class="photo-icon">&#128100;</span>
+                    <span class="photo-label">CLICK OR DRAG PHOTO</span>
+                  </div>
+                  <input type="file" id="photo-upload-input" accept="image/*" style="display: none;">
+                  <div class="photo-scan-overlay"></div>
+                </div>
+              </div>
+
+              <!-- Live Frequency Equalizer Waveform (Bounces dynamically) -->
+              <div class="audio-wave-visualizer" id="wave-visualizer">
+                <span class="wave-bar bar-1"></span>
+                <span class="wave-bar bar-2"></span>
+                <span class="wave-bar bar-3"></span>
+                <span class="wave-bar bar-4"></span>
+                <span class="wave-bar bar-5"></span>
+                <span class="wave-bar bar-6"></span>
+                <span class="wave-bar bar-7"></span>
+                <span class="wave-bar bar-8"></span>
+                <span class="wave-bar bar-9"></span>
+                <span class="wave-bar bar-10"></span>
+                <span class="wave-bar bar-11"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Avatar Dynamic Status Badge -->
+          <div class="avatar-status-wrap">
+            <div class="avatar-badge" id="avatar-state-badge">
+              <span class="state-dot" id="state-dot"></span>
+              <span class="state-text" id="state-text">SYSTEM IDLE</span>
+            </div>
+          </div>
+
+          <!-- Persona Quick Intel Specs -->
+          <div class="twin-intel-box">
+            <div class="intel-row">
+              <span class="intel-key">NAME:</span>
+              <span class="intel-val">Pranith Kumar D.</span>
+            </div>
+            <div class="intel-row">
+              <span class="intel-key">ROLE:</span>
+              <span class="intel-val">Data Analyst & AI</span>
+            </div>
+            <div class="intel-row">
+              <span class="intel-key">COLLEGE:</span>
+              <span class="intel-val">ACE Eng. College</span>
+            </div>
+            <div class="intel-row">
+              <span class="intel-key">LOCATION:</span>
+              <span class="intel-val">Hyderabad, India</span>
+            </div>
+            <div class="intel-row">
+              <span class="intel-key">RESEARCH:</span>
+              <span class="intel-val highlight-val">IJIRSET (March '26)</span>
+            </div>
+            <div class="intel-row">
+              <span class="intel-key">FLAGSHIP:</span>
+              <span class="intel-val highlight-val">ByteLife Telemetry</span>
+            </div>
+          </div>
+
+          <!-- Voice & Playback Controls Panel -->
+          <div class="voice-controls-panel">
+            <div class="ctrl-header">
+              <span>SYNTHESIS VOICE</span>
+              <label class="toggle-switch" title="Toggle response audio voice synthesis">
+                <input type="checkbox" id="toggle-audio" checked>
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+            <select id="voice-select" class="cyber-select">
+              <option value="en-US-ChristopherNeural" selected>Christopher (US Male - Natural)</option>
+              <option value="en-IN-PrabhatNeural">Prabhat (India Male - Crisp)</option>
+              <option value="en-US-GuyNeural">Guy (US Male - Dynamic)</option>
+              <option value="en-GB-RyanNeural">Ryan (UK Male - Articulate)</option>
+              <option value="en-IN-NeerjaNeural">Neerja (India Female - Melodious)</option>
+            </select>
+
+            <!-- Global Audio Player Widget -->
+            <div class="mini-player" id="mini-player">
+              <button class="player-btn" id="player-play-btn" title="Play / Pause Audio" disabled>
+                <span id="player-icon">&#9658;</span>
+              </button>
+              <div class="player-timeline" id="player-timeline">
+                <div class="player-progress-bar" id="player-progress"></div>
+              </div>
+              <span class="player-time" id="player-time">0:00</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Right Column: Interactive Chat & Knowledge Dialogue -->
+      <section class="chat-panel">
+        <!-- Quick Prompts Toolbar -->
+        <div class="suggestions-bar">
+          <span class="suggestions-label">INTEL QUERIES:</span>
+          <div class="chip-container" id="chips-container">
+            <button class="query-chip" data-query="Tell me about your ByteLife health monitoring project">💓 ByteLife System</button>
+            <button class="query-chip" data-query="What is your published research paper in IJIRSET about?">📄 IJIRSET Paper</button>
+            <button class="query-chip" data-query="What Power BI, DAX, and analytics tools do you specialize in?">🛠️ Power BI & DAX</button>
+            <button class="query-chip" data-query="What dashboards have you built for business and healthcare?">📊 Dashboards</button>
+            <button class="query-chip" data-query="What is your educational background and where are you located?">🎓 Education & Bio</button>
+            <button class="query-chip" data-query="How can recruiters and teams get in touch with you?">📬 Contact & Hire</button>
+          </div>
+        </div>
+
+        <!-- Chat Stream Message Log -->
+        <div class="chat-stream" id="chat-stream">
+          <!-- Initial Welcome Message from Digital Pranith -->
+          <div class="message-row message-twin animate-in">
+            <div class="msg-avatar-badge">PK</div>
+            <div class="msg-bubble-wrap">
+              <div class="msg-header">
+                <span class="sender-name">PRANITH KUMAR DUPUGUNTLA [DIGITAL TWIN]</span>
+                <span class="msg-timestamp">SYSTEM ONLINE</span>
+              </div>
+              <div class="msg-content">
+                <p>Hello! I am the official <strong>AI Digital Twin</strong> of <strong>Pranith Kumar Dupuguntla</strong>.</p>
+                <p>I speak in the first person, grounded in my genuine data analytics projects (<em>Power BI</em>, <em>DAX</em>, <em>Excel</em>), IoT healthcare telemetry (<em>ByteLife</em> with 99.78% accuracy), and peer-reviewed research published in <em>IJIRSET</em>.</p>
+                <p>Ask me a question or click any prompt chip to experience my neural speech synthesis!</p>
+              </div>
+              <div class="msg-footer">
+                <button class="msg-action-btn speak-again-btn" data-text="Hello! I am the official AI Digital Twin of Pranith Kumar Dupuguntla. Ask me anything about my projects, research, or technical background!">
+                  &#128266; Read Aloud
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Typing Indicator with Futuristic Radar Scan -->
+        <div class="typing-indicator" id="typing-indicator" style="display: none;">
+          <div class="typing-bubble">
+            <span class="typing-dot"></span>
+            <span class="typing-dot"></span>
+            <span class="typing-dot"></span>
+            <span class="typing-text">PRANITH IS REASONING & SYNTHESIZING...</span>
+          </div>
+        </div>
+
+        <!-- Interactive Input Dock -->
+        <div class="input-dock">
+          <form id="chat-form" class="chat-form">
+            <div class="input-wrapper">
+              <input
+                type="text"
+                id="query-input"
+                class="cyber-input"
+                placeholder="Ask Pranith about ByteLife, Power BI, IJIRSET research, or career roadmap..."
+                autocomplete="off"
+                required
+              />
+              <button type="button" class="clear-btn" id="clear-input-btn" title="Clear text">&times;</button>
+            </div>
+            <button type="submit" class="cyber-btn send-btn" id="send-btn">
+              <span class="btn-text">TRANSMIT</span>
+              <span class="btn-arrow">&rarr;</span>
+            </button>
+          </form>
+          <div class="dock-footer">
+            <span class="footer-tip">Powered by Local ChromaDB RAG &bull; BAAI/bge-small-en-v1.5 ONNX &bull; Llama 3 &bull; Edge-TTS</span>
+            <div class="dev-actions">
+              <button type="button" class="dev-btn" id="reindex-btn" title="Re-index all documents in data/ into ChromaDB">&#128259; Re-Index KB</button>
+              <button type="button" class="reset-chat-btn" id="reset-chat-btn" title="Clear chat history">Clear History</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Hidden Audio Element for Streaming Response MP3s -->
+  <audio id="global-audio-stream" preload="auto" crossorigin="anonymous"></audio>
+
+  <script src="app.js"></script>
+</body>
+</html>

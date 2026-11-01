@@ -1,0 +1,290 @@
+[
+  {
+    "timestamp": "2026-10-20 14:52:42",
+    "patient_name": "Senior Resident (Pranith K.)",
+    "vitals": {
+      "heart_rate": 110.0,
+      "systolic_bp": 78.0,
+      "diastolic_bp": 46.0,
+      "spo2": 95.0,
+      "temperature": 96.2
+    },
+    "status_code": 2,
+    "status_label": "Critical",
+    "confidence": 98.8,
+    "rule_override": false,
+    "override_reason": null,
+    "alert_dispatched": true,
+    "alert_mode": "simulated_dispatch"
+  },
+  {
+    "timestamp": "2026-10-20 14:52:38",
+    "patient_name": "Senior Resident (Pranith K.)",
+    "vitals": {
+      "heart_rate": 118.0,
+      "systolic_bp": 134.0,
+      "diastolic_bp": 86.0,
+      "spo2": 93.5,
+      "temperature": 102.6
+    },
+    "status_code": 2,
+    "status_label": "Critical",
+    "confidence": 99.2,
+    "rule_override": false,
+    "override_reason": null,
+    "alert_dispatched": true,
+    "alert_mode": "simulated_dispatch"
+  },
+  {
+    "timestamp": "2026-10-20 14:52:31",
+    "patient_name": "Senior Resident (Pranith K.)",
+    "vitals": {
+      "heart_rate": 104.0,
+      "systolic_bp": 188.0,
+      "diastolic_bp": 122.0,
+      "spo2": 96.0,
+      "temperature": 98.6
+    },
+    "status_code": 2,
+    "status_label": "Critical",
+    "confidence": 99.2,
+    "rule_override": false,
+    "override_reason": null,
+    "alert_dispatched": true,
+    "alert_mode": "simulated_dispatch"
+  },
+  {
+    "timestamp": "2026-10-20 14:33:49",
+    "patient_name": "Critical Resident",
+    "vitals": {
+      "heart_rate": 135.0,
+      "systolic_bp": 185.0,
+      "diastolic_bp": 118.0,
+      "spo2": 87.0,
+      "temperature": 103.2
+    },
+    "status_code": 2,
+    "status_label": "Critical",
+    "confidence": 100.0,
+    "rule_override": false,
+    "override_reason": null,
+    "alert_dispatched": true,
+    "alert_mode": "simulated_dispatch"
+  },
+  {
+    "timestamp": "2026-10-20 14:33:49",
+    "patient_name": "Test Senior",
+    "vitals": {
+      "heart_rate": 72.0,
+      "systolic_bp": 115.0,
+      "diastolic_bp": 75.0,
+      "spo2": 98.5,
+      "temperature": 98.4
+    },
+    "status_code": 0,
+    "status_label": "Normal",
+    "confidence": 94.8,
+    "rule_override": false,
+    "override_reason": null,
+    "alert_dispatched": false,
+    "alert_mode": null
+  },
+  {
+    "timestamp": "2026-10-20 14:30:49",
+    "patient_name": "Critical Resident",
+    "vitals": {
+      "heart_rate": 135.0,
+      "systolic_bp": 185.0,
+      "diastolic_bp": 118.0,
+      "spo2": 87.0,
+      "temperature": 103.2
+    },
+    "status_code": 2,
+    "status_label": "Critical",
+    "confidence": 100.0,
+    "rule_override": false,
+    "override_reason": null,
+    "alert_dispatched": true,
+    "alert_mode": "simulated_dispatch"
+  },
+  {
+    "timestamp": "2026-10-20 14:30:49",
+    "patient_name": "Test Senior",
+    "vitals": {
+      "heart_rate": 72.0,
+      "systolic_bp": 115.0,
+      "diastolic_bp": 75.0,
+      "spo2": 98.5,
+      "temperature": 98.4
+    },
+    "status_code": 0,
+    "status_label": "Normal",
+    "confidence": 94.8,
+    "rule_override": false,
+    "override_reason": null,
+    "alert_dispatched": false,
+    "alert_mode": null
+  },
+  {
+    "timestamp": "2026-10-20 14:27:25",
+    "patient_name": "Critical Resident",
+    "vitals": {
+      "heart_rate": 135.0,
+      "systolic_bp": 185.0,
+      "diastolic_bp": 118.0,
+      "spo2": 87.0,
+      "temperature": 103.2
+    },
+    "status_code": 2,
+    "status_label": "Critical",
+    "confidence": 100.0,
+    "rule_override": false,
+    "override_reason": null,
+    "alert_dispatched": true,
+    "alert_mode": "simulated_dispatch"
+  },
+  {
+    "timestamp": "2026-10-20 14:27:25",
+    "patient_name": "Test Senior",
+    "vitals": {
+      "heart_rate": 72.0,
+      "systolic_bp": 115.0,
+      "diastolic_bp": 75.0,
+      "spo2": 98.5,
+      "temperature": 98.4
+    },
+    "status_code": 0,
+    "status_label": "Normal",
+    "confidence": 94.8,
+    "rule_override": false,
+    "override_reason": null,
+    "alert_dispatched": false,
+    "alert_mode": null
+  },
+  {
+    "timestamp": "2026-10-20 13:22:28",
+    "patient_name": "Senior Resident (Pranith K.)",
+    "vitals": {
+      "heart_rate": 74.0,
+      "systolic_bp": 116.0,
+      "diastolic_bp": 75.0,
+      "spo2": 98.0,
+      "temperature": 98.4
+    },
+    "status_code": 0,
+    "status_label": "Normal",
+    "confidence": 95.0,
+    "rule_override": false,
+    "override_reason": null,
+    "alert_dispatched": false,
+    "alert_mode": null
+  },
+  {
+    "timestamp": "2026-10-20 13:14:44",
+    "patient_name": "Pranith Kumar (Critical Simulation)",
+    "vitals": {
+      "heart_rate": 136.0,
+      "systolic_bp": 188.0,
+      "diastolic_bp": 122.0,
+      "spo2": 87.5,
+      "temperature": 102.8
+    },
+    "status_code": 2,
+    "status_label": "Critical",
+    "confidence": 100.0,
+    "rule_override": false,
+    "override_reason": null,
+    "alert_dispatched": true,
+    "alert_mode": "simulated_dispatch"
+  },
+  {
+    "timestamp": "2026-10-20 13:14:44",
+    "patient_name": "Pranith Kumar (Senior Cohort)",
+    "vitals": {
+      "heart_rate": 74.0,
+      "systolic_bp": 116.0,
+      "diastolic_bp": 76.0,
+      "spo2": 98.2,
+      "temperature": 98.4
+    },
+    "status_code": 0,
+    "status_label": "Normal",
+    "confidence": 95.4,
+    "rule_override": false,
+    "override_reason": null,
+    "alert_dispatched": false,
+    "alert_mode": null
+  },
+  {
+    "timestamp": "2026-10-20 13:10:36",
+    "patient_name": "Critical Resident",
+    "vitals": {
+      "heart_rate": 135.0,
+      "systolic_bp": 185.0,
+      "diastolic_bp": 118.0,
+      "spo2": 87.0,
+      "temperature": 103.2
+    },
+    "status_code": 2,
+    "status_label": "Critical",
+    "confidence": 100.0,
+    "rule_override": false,
+    "override_reason": null,
+    "alert_dispatched": true,
+    "alert_mode": "simulated_dispatch"
+  },
+  {
+    "timestamp": "2026-10-20 13:10:36",
+    "patient_name": "Test Senior",
+    "vitals": {
+      "heart_rate": 72.0,
+      "systolic_bp": 115.0,
+      "diastolic_bp": 75.0,
+      "spo2": 98.5,
+      "temperature": 98.4
+    },
+    "status_code": 0,
+    "status_label": "Normal",
+    "confidence": 94.8,
+    "rule_override": false,
+    "override_reason": null,
+    "alert_dispatched": false,
+    "alert_mode": null
+  },
+  {
+    "timestamp": "2026-10-20 13:05:27",
+    "patient_name": "Critical Resident",
+    "vitals": {
+      "heart_rate": 135.0,
+      "systolic_bp": 185.0,
+      "diastolic_bp": 118.0,
+      "spo2": 87.0,
+      "temperature": 103.2
+    },
+    "status_code": 2,
+    "status_label": "Critical",
+    "confidence": 100.0,
+    "rule_override": false,
+    "override_reason": null,
+    "alert_dispatched": true,
+    "alert_mode": "simulated_dispatch"
+  },
+  {
+    "timestamp": "2026-10-20 13:05:27",
+    "patient_name": "Test Senior",
+    "vitals": {
+      "heart_rate": 72.0,
+      "systolic_bp": 115.0,
+      "diastolic_bp": 75.0,
+      "spo2": 98.5,
+      "temperature": 98.4
+    },
+    "status_code": 0,
+    "status_label": "Normal",
+    "confidence": 94.8,
+    "rule_override": false,
+    "override_reason": null,
+    "alert_dispatched": false,
+    "alert_mode": null
+  }
+]

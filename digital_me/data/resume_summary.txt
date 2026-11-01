@@ -1,0 +1,18 @@
+# Professional Summary & Resume Details
+
+Name: Pranith Kumar Dupuguntla
+Role: Data Analyst
+Location: Hyderabad, India
+Contact: +91 6300905921 | Praneeth.dupukuntla@gmail.com
+Education: Bachelor of Technology (B.Tech) in Computer Science and Engineering, Specializing in Data Science, ACE Engineering College, Hyderabad (2023–2026)
+
+Technical Skills:
+- Power BI: DAX, Power Query, Data Modeling, Dashboard Development, KPI Reporting, Data Visualization
+- Microsoft Excel: Pivot Tables, XLOOKUP, INDEX-MATCH, Power Query, Advanced Formulas, Data Validation
+- Python: Pandas, NumPy, Matplotlib, Statistical Analysis, Data Cleaning, Predictive Analytics
+- Data Analytics: ETL, Business Intelligence, Business Analytics, Trend Analysis, Reporting Automation, Problem Solving
+
+Key Projects:
+1. Employee Performance Dashboard: Developed an interactive employee performance dashboard using Microsoft Excel. Cleaned and organized employee data using Excel functions, Pivot Tables, Pivot Charts, Conditional Formatting, and KPI cards to support management decision-making.
+2. Hospital Management Dashboard: Developed an interactive healthcare dashboard using Power BI to analyze patient demographics, admissions, billing, BMI, blood pressure, and cholesterol. Performed data transformations using Power Query and created custom DAX measures and KPIs.
+3. Smoking Health Analysis Dashboard: Designed a Power BI dashboard to analyze smoking behavior and its impact on health indicators (BMI, cholesterol, blood pressure, age, gender) using DAX and Power Query to deliver preventive healthcare insights.

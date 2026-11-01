@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Me | Person Profile & Conversational AI Twin</title>
+  <!-- Chart.js for skill visualization -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+  <!-- Top Navigation & Accessibility Controls -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="brand-section">
+        <div class="brand-icon">🤖</div>
+        <div class="brand-title">
+          <h1>Digital Me</h1>
+          <p>Personal Profile, Project Portfolio & Conversational AI Twin</p>
+        </div>
+      </div>
+
+      <!-- Accessibility Toolset -->
+      <div class="accessibility-bar">
+        <button id="btnSeniorMode" class="acc-btn" title="Toggle extra large font and spacing">
+          <span>👁</span> Senior View
+        </button>
+        <button id="btnContrast" class="acc-btn" title="Toggle high contrast black mode">
+          <span>🌓</span> High Contrast
+        </button>
+      </div>
+
+      <!-- Navigation Tabs -->
+      <nav class="tabs-nav" role="tablist">
+        <button class="tab-btn active" data-tab="tab-profile"><span>👤</span> Person Profile</button>
+        <button class="tab-btn" data-tab="tab-chat"><span>💬</span> Chat with AI Twin</button>
+        <button class="tab-btn" data-tab="tab-create"><span>✏️</span> Create / Edit Profile</button>
+        <button class="tab-btn" data-tab="tab-career"><span>📊</span> Skill Gap Intelligence</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-wrapper">
+
+    <!-- ========================================================== -->
+    <!-- TAB 1: PERSON PROFILE (DEFAULT LANDING VIEW)               -->
+    <!-- ========================================================== -->
+    <section id="tab-profile" class="tab-content active">
+      
+      <!-- Profile Hero Card -->
+      <div class="card profile-hero-card">
+        <div class="profile-header-layout">
+          <div class="profile-avatar-large" id="profAvatar">👨‍💻</div>
+          <div class="profile-main-meta">
+            <div class="profile-title-row">
+              <h1 id="profHeroName">Pranith Kumar Dupuguntla</h1>
+              <span class="badge-tag tag-normal" id="profStatusBadge">Profile Active & Verified</span>
+            </div>
+            <h3 id="profHeroRole" class="profile-subtitle">Data Analyst • CSE (Data Science)</h3>
+            <p id="profHeroLocation" class="profile-location">📍 Hyderabad, Telangana, India</p>
+            
+            <div class="profile-contact-chips">
+              <span class="contact-chip" id="profChipEmail">✉️ Praneeth.dupukuntla@gmail.com</span>
+              <span class="contact-chip" id="profChipPhone">📞 +91 6300905921</span>
+              <span class="contact-chip" id="profChipCollege">🎓 ACE Engineering College (JNTUH)</span>
+            </div>
+
+            <p id="profHeroBio" class="profile-bio-text">
+              Passionate Data Analyst skilled in Power BI (DAX, Power Query), Advanced Excel, Python, and SQL. 
+              Experienced in predictive analytics, star-schema data modeling, interactive KPI dashboards, 
+              healthcare telemetry (ByteLife), and published NLP research on skill extraction.
+            </p>
+
+            <div class="profile-actions-bar">
+              <button class="btn-primary" onclick="switchToTab('tab-chat')">
+                <span>💬 Chat with Digital Twin</span>
+              </button>
+              <button class="btn-secondary" onclick="switchToTab('tab-create')">
+                <span>✏️ Edit Profile Data</span>
+              </button>
+              <button class="btn-secondary" onclick="prepareNewProfileForm()">
+                <span>➕ Create New Person Profile</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Two-Column Portfolio Layout -->
+      <div class="dashboard-grid" style="margin-top: 24px;">
+        
+        <!-- Left Column: Core Technical Competencies & Education -->
+        <div class="card">
+          <div class="card-title">
+            <h2><span>🛠️</span> Core Technical Competencies</h2>
+          </div>
+          
+          <div class="skills-category-group">
+            <h4 class="category-heading">Business Intelligence & Reporting</h4>
+            <div class="chips-list" id="profSkillsBI">
+              <span class="skill-tag highlighted">Power BI</span>
+              <span class="skill-tag highlighted">DAX Formulas</span>
+              <span class="skill-tag highlighted">Power Query (M)</span>
+              <span class="skill-tag">Data Modeling</span>
+              <span class="skill-tag">KPI Reporting</span>
+              <span class="skill-tag">Tableau</span>
+            </div>
+          </div>
+
+          <div class="skills-category-group">
+            <h4 class="category-heading">Spreadsheet Engineering & Analysis</h4>
+            <div class="chips-list">
+              <span class="skill-tag highlighted">Microsoft Excel</span>
+              <span class="skill-tag">Pivot Tables</span>
+              <span class="skill-tag">XLOOKUP / INDEX-MATCH</span>
+              <span class="skill-tag">Conditional Formatting</span>
+              <span class="skill-tag">Data Validation</span>
+            </div>
+          </div>
+
+          <div class="skills-category-group">
+            <h4 class="category-heading">Programming & Machine Learning</h4>
+            <div class="chips-list">
+              <span class="skill-tag highlighted">Python</span>
+              <span class="skill-tag">Pandas</span>
+              <span class="skill-tag">NumPy</span>
+              <span class="skill-tag">Scikit-Learn</span>
+              <span class="skill-tag">SQL / PostgreSQL</span>
+              <span class="skill-tag">Random Forest</span>
+              <span class="skill-tag">NLP</span>
+            </div>
+          </div>
+
+          <hr style="margin: 20px 0; border: none; border-top: 1px solid var(--neutral-200);">
+
+          <div class="card-title">
+            <h2><span>🎓</span> Education & Academic Background</h2>
+          </div>
+          <div class="education-block">
+            <h4 style="margin-bottom: 4px; color: var(--neutral-900);">Bachelor of Technology (B.Tech)</h4>
+            <p style="font-weight: 600; color: #0284c7; margin-bottom: 4px;">Computer Science and Engineering (Data Science)</p>
+            <p style="font-size: 0.9rem; color: #64748b; margin-bottom: 8px;">ACE Engineering College, Hyderabad • Affiliated with JNTUH (2023–2026)</p>
+            <p style="font-size: 0.88rem; color: var(--neutral-700);">Coursework: Data Science, Machine Learning, Statistical Analysis, Database Management Systems, Data Structures & Algorithms.</p>
+          </div>
+          <div class="education-block" style="margin-top: 14px;">
+            <h4 style="margin-bottom: 4px; color: var(--neutral-900);">Diploma in Engineering</h4>
+            <p style="font-weight: 600; color: #0284c7; margin-bottom: 4px;">Electronics and Communication Engineering (ECE)</p>
+            <p style="font-size: 0.9rem; color: #64748b;">Solid hardware, signal processing, and analytical baseline foundation.</p>
+          </div>
+
+          <hr style="margin: 20px 0; border: none; border-top: 1px solid var(--neutral-200);">
+
+          <div class="card-title">
+            <h2><span>🎯</span> Target Roles & Career Focus</h2>
+          </div>
+          <div class="chips-list" id="profTargetRoles">
+            <span class="badge-tag tag-normal">Data Analyst</span>
+            <span class="badge-tag tag-normal">Business Analyst</span>
+            <span class="badge-tag tag-normal">BI Developer</span>
+            <span class="badge-tag tag-normal">Quality Assurance</span>
+            <span class="badge-tag tag-normal">Entry-level Software Developer</span>
+          </div>
+        </div>
+
+        <!-- Right Column: Projects & Research Portfolio -->
+        <div class="card">
+          <div class="card-title">
+            <h2><span>🚀</span> Featured Projects & Published Research</h2>
+          </div>
+
+          <div class="projects-list-container" id="profProjectsList">
+            
+            <!-- Project 1: ByteLife -->
+            <div class="project-card">
+              <div class="project-header">
+                <div>
+                  <h3 class="project-title">💓 Early Detection & Intervention for the Aging Population (ByteLife)</h3>
+                  <span class="project-type">Academic Mini Project (2025–2026) • Healthcare Telemetry & AI</span>
+                </div>
+              </div>
+              <p class="project-desc">
+                Co-authored an end-to-end telemetry system monitoring senior vital signs (Heart Rate, Blood Pressure Sys/Dia, SpO2, Temperature). 
+                Engineered a dual-layer safety mechanism featuring a <strong>Random Forest Classifier (99.78% accuracy)</strong> and a clinical safety failsafe override, triggering automated caretaker email dispatches.
+              </p>
+              <div class="project-tech-chips">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Flask</span>
+                <span class="tech-pill">Scikit-Learn</span>
+                <span class="tech-pill">SMTP Alerts</span>
+                <span class="tech-pill">JavaScript</span>
+              </div>
+            </div>
+
+            <!-- Project 2: IJIRSET Research Paper -->
+            <div class="project-card">
+              <div class="project-header">
+                <div>
+                  <h3 class="project-title">📄 Detecting Micro Skills and Unlocking Macro Careers</h3>
+                  <span class="project-type">Published Research Paper • IJIRSET (Vol. 15, Issue 3, March 2026)</span>
+                </div>
+              </div>
+              <p class="project-desc">
+                Co-authored peer-reviewed research addressing keyword ATS limitations. Designed an AI-driven platform using 
+                Natural Language Processing (NLP) to parse resumes, extract verified micro-skills from coding repositories (GitHub, LeetCode), 
+                conduct skill-gap analysis, and generate ATS-optimized summaries.
+              </p>
+              <div class="project-tech-chips">
+                <span class="tech-pill">NLP</span>
+                <span class="tech-pill">Machine Learning</span>
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Career Analytics</span>
+              </div>
+            </div>
+
+            <!-- Project 3: Hospital Dashboard -->
+            <div class="project-card">
+              <div class="project-header">
+                <div>
+                  <h3 class="project-title">📊 Hospital Management Analytics Dashboard</h3>
+                  <span class="project-type">Business Intelligence & Healthcare Reporting</span>
+                </div>
+              </div>
+              <p class="project-desc">
+                Developed an interactive Power BI dashboard tracking patient demographics, admission volumes, billing revenue, BMI, blood pressure, and cholesterol metrics. 
+                Performed complex ETL with Power Query and designed custom DAX measures for executive hospital decision-making.
+              </p>
+              <div class="project-tech-chips">
+                <span class="tech-pill">Power BI</span>
+                <span class="tech-pill">DAX</span>
+                <span class="tech-pill">Power Query</span>
+                <span class="tech-pill">Data Modeling</span>
+              </div>
+            </div>
+
+            <!-- Project 4: Employee Performance Dashboard -->
+            <div class="project-card">
+              <div class="project-header">
+                <div>
+                  <h3 class="project-title">📈 Employee Performance Executive Dashboard</h3>
+                  <span class="project-type">Advanced Spreadsheet Engineering</span>
+                </div>
+              </div>
+              <p class="project-desc">
+                Built a dynamic Microsoft Excel dashboard utilizing interactive Pivot Tables, Slicers, dynamic KPI summary cards, and automated rating formulas to streamline management performance reviews.
+              </p>
+              <div class="project-tech-chips">
+                <span class="tech-pill">Microsoft Excel</span>
+                <span class="tech-pill">Pivot Tables</span>
+                <span class="tech-pill">XLOOKUP</span>
+                <span class="tech-pill">KPI Modeling</span>
+              </div>
+            </div>
+
+            <!-- Project 5: Gesture Mouse & Vision -->
+            <div class="project-card">
+              <div class="project-header">
+                <div>
+                  <h3 class="project-title">🖱️ Gesture-Controlled Contactless Virtual Mouse</h3>
+                  <span class="project-type">Computer Vision & HCI</span>
+                </div>
+              </div>
+              <p class="project-desc">
+                Designed a contactless mouse control system using real-time hand landmark detection and computer vision to control cursor movement, clicking, and dragging.
+              </p>
+              <div class="project-tech-chips">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">OpenCV</span>
+                <span class="tech-pill">MediaPipe</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- TAB 2: CHAT WITH DIGITAL TWIN (AI PERSONA)                 -->
+    <!-- ========================================================== -->
+    <section id="tab-chat" class="tab-content">
+      <div class="card" style="margin-bottom: 24px;">
+        <div class="card-title">
+          <h2><span>🤖</span> Conversational Digital Twin</h2>
+          <span class="badge-tag tag-normal" id="digitalMeBadge">ChromaDB RAG Active (152 Chunks)</span>
+        </div>
+        <p style="color: #64748b; font-size: 0.95rem; line-height: 1.5; margin-bottom: 16px;">
+          Converse directly with the AI Persona of <strong id="chatPersonaName">Pranith Kumar Dupuguntla</strong>. 
+          The persona answers in the first person based on verified records, project documentation (including the full 41-page ByteLife report and 8-page IJIRSET publication), and career history.
+        </p>
+
+        <!-- Suggested Prompt Chips -->
+        <div class="prompt-chips-wrapper">
+          <span style="font-size: 0.82rem; font-weight: 700; color: #475569; text-transform: uppercase; letter-spacing: 0.5px;">Quick Prompts:</span>
+          <div class="chips-list" id="digitalMeQuickChips">
+            <button class="chip-btn" onclick="askDigitalMePrompt('Tell me about your ByteLife healthcare project and its ML model.')">💓 ByteLife Health Project</button>
+            <button class="chip-btn" onclick="askDigitalMePrompt('What Power BI, DAX, and analytics tools do you specialize in?')">📊 Power BI & DAX Skills</button>
+            <button class="chip-btn" onclick="askDigitalMePrompt('Where did you publish your research paper and what problem does it solve?')">📄 IJIRSET Research Paper</button>
+            <button class="chip-btn" onclick="askDigitalMePrompt('What is your educational background and where are you located?')">🎓 Education & College</button>
+            <button class="chip-btn" onclick="askDigitalMePrompt('What analytics dashboards have you built for healthcare and business?')">📈 Dashboards Built</button>
+            <button class="chip-btn" onclick="askDigitalMePrompt('How can I contact or interview you for open roles?')">📬 Contact & Hire</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chat Container Card -->
+      <div class="card digital-chat-card">
+        <div class="chat-header">
+          <div class="chat-status-indicator">
+            <span class="status-dot-pulse"></span>
+            <span>Digital Twin Online & RAG Retrieval Active</span>
+          </div>
+          <div class="chat-controls">
+            <button class="btn-secondary btn-sm" id="btnToggleAudio" onclick="toggleDigitalMeAudio()" title="Toggle text-to-speech audio narration">
+              <span id="audioIcon">🔊</span> Audio Readout: <strong id="audioStatusText">ON</strong>
+            </button>
+            <button class="btn-secondary btn-sm" onclick="clearDigitalMeChat()" title="Reset conversation">
+              <span>🧹</span> Clear Chat
+            </button>
+          </div>
+        </div>
+
+        <!-- Chat History Stream -->
+        <div class="chat-messages" id="digitalMeChatMessages">
+          <!-- Initial AI Welcome Bubble -->
+          <div class="chat-bubble-row bot-row">
+            <div class="chat-avatar bot-avatar">👨‍💻</div>
+            <div class="chat-bubble bot-bubble">
+              <div class="bubble-header">
+                <strong id="chatBubbleTitle">Pranith Kumar Dupuguntla (Digital Twin)</strong>
+                <span class="bubble-time">Just now</span>
+              </div>
+              <div class="bubble-body">
+                Hello! I am <strong>Pranith Kumar Dupuguntla</strong>, a Data Analyst based in Hyderabad, India. 
+                I hold a B.Tech in Computer Science and Engineering with a specialization in Data Science from ACE Engineering College (affiliated with JNTUH).
+                <br><br>
+                I specialize in <strong>Power BI (DAX, Power Query)</strong>, <strong>Python (Pandas, Scikit-Learn)</strong>, <strong>SQL</strong>, and <strong>Healthcare Analytics</strong>. 
+                I co-authored the <strong>ByteLife</strong> vital sign intervention platform (with a 99.78% accurate Random Forest model) and published research in <strong>IJIRSET</strong> on micro-skills detection.
+                <br><br>
+                What would you like to know about my background, research, or projects?
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Input Form Bar -->
+        <form class="chat-input-bar" id="digitalMeForm" onsubmit="handleDigitalMeSubmit(event)">
+          <input 
+            type="text" 
+            id="digitalMeInput" 
+            class="chat-input-field" 
+            placeholder="Ask Pranith about ByteLife, Power BI, IJIRSET research, or career background..." 
+            autocomplete="off"
+            required
+          />
+          <button type="submit" class="btn-primary" id="digitalMeSendBtn">
+            <span>Send Query 🚀</span>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- TAB 3: CREATE / EDIT PERSON PROFILE                        -->
+    <!-- ========================================================== -->
+    <section id="tab-create" class="tab-content">
+      <div class="card">
+        <div class="card-title">
+          <h2><span>✏️</span> Create or Edit Person's Profile</h2>
+          <span class="badge-tag tag-normal">Profile Builder Engine</span>
+        </div>
+        <p style="color: #64748b; font-size: 0.95rem; margin-bottom: 20px;">
+          Use this form to update the current profile or create a brand new person profile. 
+          When saved, the AI Digital Twin immediately adopts this persona, updates its facts, and answers in the first person!
+        </p>
+
+        <!-- Saved Profiles Selector -->
+        <div class="form-group" style="background-color: var(--neutral-100); padding: 14px; border-radius: 8px; margin-bottom: 24px;">
+          <label for="selectExistingProfile" style="font-weight: 700;">Load an Existing Profile to View or Edit:</label>
+          <div style="display: flex; gap: 10px; margin-top: 6px;">
+            <select id="selectExistingProfile" class="chat-input-field" style="background:#fff; flex:1;" onchange="loadSelectedProfile(this.value)">
+              <option value="pranith_kumar">Pranith Kumar Dupuguntla (Data Analyst)</option>
+            </select>
+            <button type="button" class="btn-secondary" onclick="prepareNewProfileForm()"><span>➕</span> New Blank Profile</button>
+          </div>
+        </div>
+
+        <form id="personProfileForm" onsubmit="handleSaveProfile(event)">
+          <div class="input-row">
+            <div class="form-group">
+              <label for="formName">Full Name *</label>
+              <input type="text" id="formName" required placeholder="e.g. Pranith Kumar Dupuguntla">
+            </div>
+            <div class="form-group">
+              <label for="formRole">Professional Title / Headline *</label>
+              <input type="text" id="formRole" required placeholder="e.g. Data Analyst | CSE (Data Science)">
+            </div>
+          </div>
+
+          <div class="input-row">
+            <div class="form-group">
+              <label for="formLocation">Location</label>
+              <input type="text" id="formLocation" placeholder="e.g. Hyderabad, India">
+            </div>
+            <div class="form-group">
+              <label for="formEmail">Email Address</label>
+              <input type="email" id="formEmail" placeholder="e.g. name@gmail.com">
+            </div>
+            <div class="form-group">
+              <label for="formPhone">Phone Number</label>
+              <input type="text" id="formPhone" placeholder="e.g. +91 6300905921">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="formEducation">Educational Background & University</label>
+            <input type="text" id="formEducation" placeholder="e.g. B.Tech in CSE (Data Science), ACE Engineering College (2023-2026)">
+          </div>
+
+          <div class="form-group">
+            <label for="formBio">Professional Summary / Bio *</label>
+            <textarea id="formBio" rows="3" required placeholder="Describe your experience, technical core strengths, and goals..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="formSkills">Technical Skills (Comma separated) *</label>
+            <input type="text" id="formSkills" required placeholder="e.g. Power BI, DAX, Python, SQL, Tableau, Excel, Scikit-Learn">
+          </div>
+
+          <div class="form-group">
+            <label for="formRoles">Target Career Roles (Comma separated)</label>
+            <input type="text" id="formRoles" placeholder="e.g. Data Analyst, Business Analyst, BI Developer, Software Engineer">
+          </div>
+
+          <!-- Project Highlights -->
+          <div class="card-title" style="margin-top: 24px;">
+            <h3><span>🚀</span> Project Highlight 1</h3>
+          </div>
+          <div class="input-row">
+            <div class="form-group">
+              <label for="proj1Title">Project Title</label>
+              <input type="text" id="proj1Title" placeholder="e.g. ByteLife Health Telemetry Platform">
+            </div>
+            <div class="form-group">
+              <label for="proj1Tech">Technologies Used</label>
+              <input type="text" id="proj1Tech" placeholder="e.g. Python, Flask, Scikit-Learn, Random Forest">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="proj1Desc">Project Description & Impact</label>
+            <textarea id="proj1Desc" rows="2" placeholder="Describe the problem solved, architecture, and metrics..."></textarea>
+          </div>
+
+          <div class="card-title" style="margin-top: 16px;">
+            <h3><span>🚀</span> Project Highlight 2</h3>
+          </div>
+          <div class="input-row">
+            <div class="form-group">
+              <label for="proj2Title">Project Title</label>
+              <input type="text" id="proj2Title" placeholder="e.g. IJIRSET Research Paper on Micro Skills">
+            </div>
+            <div class="form-group">
+              <label for="proj2Tech">Technologies Used</label>
+              <input type="text" id="proj2Tech" placeholder="e.g. NLP, Machine Learning, Python">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="proj2Desc">Project Description & Impact</label>
+            <textarea id="proj2Desc" rows="2" placeholder="Describe the research, methodology, and outcome..."></textarea>
+          </div>
+
+          <!-- Custom Knowledge / Q&A text -->
+          <div class="form-group" style="margin-top: 16px;">
+            <label for="formCustomQA">Custom Personal Q&A / Additional Knowledge Base Text</label>
+            <textarea id="formCustomQA" rows="3" placeholder="Add custom Q&A or extra facts for the AI Twin to learn (e.g. Q: What is your favorite tool? A: I love Power BI for data visualization...)."></textarea>
+          </div>
+
+          <div style="margin-top: 24px; display: flex; gap: 12px; align-items: center;">
+            <button type="submit" class="btn-primary" id="btnSaveProfile">
+              <span>💾 Save Profile & Update Digital Twin</span>
+            </button>
+            <span id="saveProfileMsg" style="font-weight: 600; font-size: 0.9rem;"></span>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- TAB 4: CAREER & SKILL GAP INTELLIGENCE                     -->
+    <!-- ========================================================== -->
+    <section id="tab-career" class="tab-content">
+      <div class="dashboard-grid">
+
+        <!-- Left Column: Input Form -->
+        <div class="card">
+          <div class="card-title">
+            <h2><span>📋</span> Resume & Competency Input</h2>
+          </div>
+          <p style="color: #64748b; font-size: 0.9rem; margin-bottom: 16px;">
+            Paste your resume or list your technical skills to analyze your readiness against standard industry benchmarks.
+          </p>
+
+          <form id="careerForm">
+            <div class="form-group">
+              <label for="targetRoleSelect">Target Industry Role</label>
+              <select id="targetRoleSelect">
+                <option value="Data Analyst" selected>Data Analyst</option>
+                <option value="AI & Data Science Architect">AI & Data Science Architect</option>
+                <option value="Healthcare Informatics Specialist">Healthcare Informatics Specialist</option>
+                <option value="Full-Stack AI Engineer">Full-Stack AI Engineer</option>
+                <option value="Elderly Care & Assistive Tech Specialist">Elderly Care & Assistive Tech Specialist</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="resumeTextInput">Resume Text / Technical Skills</label>
+              <textarea id="resumeTextInput" rows="8" placeholder="Paste resume content here..."></textarea>
+            </div>
+
+            <button type="button" class="btn-secondary" style="margin-bottom: 12px;" onclick="loadSampleResume()">
+              <span>📝</span> Load Profile Resume Text
+            </button>
+
+            <button type="submit" class="btn-primary" id="btnAnalyzeSkills">
+              <span>⚡ Analyze Skill Gaps & Roadmap</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Right Column: Results & Analytics -->
+        <div class="card" id="careerResultsContainer">
+          <div class="card-title">
+            <h2><span>📊</span> Role Readiness & Gap Analytics</h2>
+          </div>
+
+          <div id="careerResultsPlaceholder" style="text-align: center; padding: 40px 20px; color: #64748b;">
+            <div style="font-size: 2.5rem; margin-bottom: 10px;">📈</div>
+            <p>Select a target role and submit resume text to generate radar match scores, matched competencies, and your step-by-step upskilling roadmap.</p>
+          </div>
+
+          <div id="careerResultsContent" style="display: none;">
+            <div class="status-banner" id="careerVerdictBanner">
+              <div>
+                <h3 id="careerTargetRoleTitle" style="margin-bottom: 4px;">Data Analyst</h3>
+                <p id="careerVerdictText">Analyzing competency baseline...</p>
+              </div>
+              <div style="text-align: right;">
+                <div style="font-size: 1.8rem; font-weight: 800;" id="careerScoreDisplay">85%</div>
+                <span class="badge-tag tag-normal">Readiness Score</span>
+              </div>
+            </div>
+
+            <div class="chart-container" style="height: 240px; margin-bottom: 20px;">
+              <canvas id="skillRadarChart"></canvas>
+            </div>
+
+            <div style="margin-bottom: 18px;">
+              <h4 style="margin-bottom: 8px;">✅ Matched Skills</h4>
+              <div class="chips-list" id="matchedSkillsList"></div>
+            </div>
+
+            <div style="margin-bottom: 18px;">
+              <h4 style="margin-bottom: 8px;">⚠️ Missing Skills & Gaps</h4>
+              <div class="chips-list" id="missingSkillsList"></div>
+            </div>
+
+            <div>
+              <h4 style="margin-bottom: 8px;">🚀 Prioritized Upskilling Roadmap</h4>
+              <div id="upskillingRoadmapList"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="app-footer">
+    <p>
+      <strong>Digital Me</strong> • Personal Profile, Portfolio & Conversational AI Twin Platform
+      <br>
+      Created for <strong>Pranith Kumar Dupuguntla</strong> • Powered by Flask, ChromaDB, FastEmbed & LangChain
+    </p>
+  </footer>
+
+  <script src="/static/js/main.js"></script>
+</body>
+</html>

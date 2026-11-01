@@ -1,0 +1,118 @@
+{
+  "id": "pranith_kumar",
+  "name": "Pranith Kumar Dupuguntla",
+  "role": "Data Analyst",
+  "specialization": "CSE (Data Science)",
+  "location": "Hyderabad, India",
+  "email": "Praneeth.dupukuntla@gmail.com",
+  "phone": "+91 6300905921",
+  "education": "Bachelor of Technology (B.Tech) in Computer Science and Engineering (Data Science), ACE Engineering College, Hyderabad (Affiliated with JNTUH, 2023\u20132026)",
+  "prior_education": "Diploma in Electronics and Communication Engineering (ECE)",
+  "bio": "Passionate Data Analyst skilled in Power BI, Advanced Excel, Python, and SQL. Experienced in predictive analytics, star-schema data modeling, interactive KPI dashboards, real-time healthcare telemetry, and published research in NLP-driven skill analytics.",
+  "skills": [
+    "Power BI",
+    "DAX",
+    "Power Query",
+    "Microsoft Excel",
+    "Pivot Tables",
+    "XLOOKUP",
+    "Python",
+    "Pandas",
+    "NumPy",
+    "SQL",
+    "PostgreSQL",
+    "Tableau",
+    "Scikit-Learn",
+    "Data Cleaning",
+    "ETL",
+    "KPI Reporting",
+    "Predictive Analytics",
+    "Machine Learning"
+  ],
+  "projects": [
+    {
+      "title": "Early Detection & Intervention for Aging Population (ByteLife)",
+      "category": "Healthcare Telemetry & AI",
+      "period": "2025\u20132026",
+      "description": "Co-authored an end-to-end health monitoring system capturing 5 vitals (Heart Rate, BP Sys/Dia, SpO2, Temperature). Combines a Random Forest Classifier (99.78% accuracy) with a clinical safety override failsafe and automated caretaker emergency email alerts.",
+      "tech": [
+        "Python",
+        "Flask",
+        "Scikit-Learn",
+        "SMTP",
+        "HTML5/CSS3",
+        "JavaScript"
+      ]
+    },
+    {
+      "title": "Detecting Micro Skills & Unlocking Macro Careers",
+      "category": "Published Research Paper (IJIRSET)",
+      "period": "March 2026",
+      "description": "Published research paper in IJIRSET (Vol. 15, Issue 3, Impact Factor: 8.699). AI platform using NLP to parse resumes, extract micro-skills from GitHub/LeetCode repositories, perform skill-gap analysis, and generate ATS-optimized summaries.",
+      "tech": [
+        "NLP",
+        "Machine Learning",
+        "Python",
+        "Career Analytics"
+      ]
+    },
+    {
+      "title": "Hospital Management Dashboard",
+      "category": "Business Intelligence",
+      "period": "2025",
+      "description": "Interactive healthcare dashboard in Power BI analyzing patient demographics, admissions, billing, BMI, blood pressure, and cholesterol with custom DAX measures and clinical KPIs.",
+      "tech": [
+        "Power BI",
+        "DAX",
+        "Power Query",
+        "Healthcare Analytics"
+      ]
+    },
+    {
+      "title": "Employee Performance Dashboard",
+      "category": "Executive Reporting",
+      "period": "2025",
+      "description": "Advanced Excel dashboard with dynamic Pivot Tables, Pivot Charts, Slicers, KPI cards, and automated rating models to facilitate management decision-making.",
+      "tech": [
+        "Microsoft Excel",
+        "Pivot Tables",
+        "XLOOKUP",
+        "INDEX-MATCH"
+      ]
+    },
+    {
+      "title": "Gesture-Controlled Mouse System",
+      "category": "Computer Vision",
+      "period": "2024",
+      "description": "Vision-based human-computer interface allowing contactless cursor control using hand gestures in real time.",
+      "tech": [
+        "Python",
+        "OpenCV",
+        "MediaPipe"
+      ]
+    },
+    {
+      "title": "Brain Tumor Classification from MRI Scans",
+      "category": "Deep Learning",
+      "period": "2024",
+      "description": "Machine learning classification pipeline for neuroimaging analysis detecting brain tumor patterns.",
+      "tech": [
+        "Python",
+        "Scikit-Learn",
+        "NumPy",
+        "Matplotlib"
+      ]
+    }
+  ],
+  "target_roles": [
+    "Data Analyst",
+    "Business Analyst",
+    "Business Intelligence (BI) Developer",
+    "Quality Assurance",
+    "Software Development Engineer"
+  ],
+  "certifications": [
+    "Microsoft Certified: Power BI Data Analyst Associate (PL-300 Candidate)",
+    "Data Analytics & Python Machine Learning Mastery"
+  ]
+}

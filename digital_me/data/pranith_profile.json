@@ -1,0 +1,68 @@
+{
+  "name": "Pranith Kumar Dupuguntla",
+  "title": "Data Analyst & AI Solutions Practitioner",
+  "location": "Hyderabad, Telangana, India",
+  "email": "Praneeth.dupukuntla@gmail.com",
+  "phone": "+91 6300905921",
+  "education": {
+    "degree": "Bachelor of Technology (B.Tech) in Computer Science and Engineering (Data Science)",
+    "institution": "ACE Engineering College, Hyderabad (Affiliated with JNTUH)",
+    "period": "2023–2026",
+    "prior": "Diploma in Electronics and Communication Engineering (ECE)"
+  },
+  "summary": "Passionate and detail-oriented Data Analyst and AI builder with deep expertise in Power BI (DAX, Power Query, Star Schema), Python (Pandas, NumPy, Scikit-learn), Advanced Microsoft Excel, and SQL. Co-author of ByteLife real-time elderly health telemetry and published researcher in NLP micro-skill extraction (IJIRSET).",
+  "technical_skills": {
+    "business_intelligence": ["Power BI", "DAX", "Power Query", "Data Modeling", "KPI Reporting", "Interactive Dashboards", "Tableau"],
+    "spreadsheets_automation": ["Microsoft Excel", "Pivot Tables", "XLOOKUP", "INDEX-MATCH", "VBA / Macros", "Power Query", "Conditional Formatting"],
+    "programming_languages": ["Python", "SQL", "C++", "Java", "C"],
+    "data_science_ml": ["Pandas", "NumPy", "Scikit-Learn", "Matplotlib", "Seaborn", "Random Forest", "NLP", "OpenCV", "MediaPipe"],
+    "databases_tools": ["PostgreSQL", "MySQL", "ChromaDB", "Git", "GitHub", "Flask", "Jupyter Notebooks"]
+  },
+  "featured_projects": [
+    {
+      "name": "ByteLife - Early Detection & Intervention for the Aging Population",
+      "type": "Healthcare Telemetry & AI Dispatch System",
+      "period": "2025–2026",
+      "description": "An end-to-end IoT and ML telemetry platform monitoring 5 vital signs in real time (Heart Rate, Systolic BP, Diastolic BP, SpO2, Temperature). Features a Random Forest Classifier with 99.78% accuracy and clinical rule failsafes to trigger immediate caregiver alerts with OTC medicine recommendations.",
+      "tech_stack": ["Python", "Flask", "Scikit-learn", "Pandas", "HTML/CSS/JS", "SMTP Alerting"]
+    },
+    {
+      "name": "Detecting Micro Skills and Unlocking Macro Careers",
+      "type": "Peer-Reviewed Research Publication (IJIRSET March 2026)",
+      "period": "March 2026",
+      "description": "Published paper in International Journal of Innovative Research in Science, Engineering and Technology (IJIRSET). Uses NLP and ML to parse resumes, verify micro-skills from GitHub and LeetCode activity, conduct automated gap analyses, and produce ATS-optimized career roadmaps.",
+      "tech_stack": ["NLP", "Machine Learning", "Python", "Data Extraction", "Skill Taxonomy"]
+    },
+    {
+      "name": "Hospital Management Dashboard",
+      "type": "Healthcare Business Intelligence",
+      "description": "Developed interactive Power BI dashboard tracking patient demographics, admission trends, length of stay, medical billing distributions, and clinical health indicators (BMI, BP, cholesterol). Implemented dynamic DAX measures and KPI scorecards.",
+      "tech_stack": ["Power BI", "DAX", "Power Query", "Healthcare Analytics"]
+    },
+    {
+      "name": "Employee Performance Analytics Dashboard",
+      "type": "Human Capital Analytics",
+      "description": "Built an executive Excel performance dashboard utilizing Pivot Tables, dynamic slicers, KPI summary cards, and advanced formula modeling to optimize workforce allocation and performance reviews.",
+      "tech_stack": ["Microsoft Excel", "Pivot Tables", "Advanced Formulas", "Data Modeling"]
+    },
+    {
+      "name": "Smoking Behavior & Health Indicators Dashboard",
+      "type": "Predictive Health BI",
+      "description": "Power BI analytical dashboard examining statistical correlations between smoking patterns and physiological markers like cholesterol, age groups, blood pressure, and cardiovascular risk.",
+      "tech_stack": ["Power BI", "DAX", "Statistical Modeling"]
+    },
+    {
+      "name": "Gesture-Controlled Virtual Mouse",
+      "type": "Computer Vision & Human-Computer Interaction",
+      "description": "Real-time hand tracking mouse navigation and click automation utilizing webcam frames.",
+      "tech_stack": ["Python", "OpenCV", "MediaPipe"]
+    }
+  ],
+  "target_roles": [
+    "Data Analyst",
+    "Business Analyst",
+    "Business Intelligence (BI) Developer",
+    "Quality Assurance Analyst",
+    "Software Development Engineer (Entry Level)"
+  ]
+}

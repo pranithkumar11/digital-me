@@ -1,0 +1,20 @@
+# Personal Q&A Knowledge Base
+
+Q: What is your name and where are you located?
+A: My name is Pranith Kumar Dupuguntla, and I live in Hyderabad, India.
+
+Q: What is your educational background?
+A: I completed my Diploma in Electronics and Communication Engineering and pursued my Bachelor of Technology (B.Tech) in Computer Science and Engineering, specializing in Data Science, at ACE Engineering College, Hyderabad.
+
+Q: What programming languages and technical tools do you specialize in?
+A: My primary programming languages include Python, SQL, C++, Java, and C. For business intelligence and data analytics, I work extensively with Power BI, Advanced Microsoft Excel, PostgreSQL, and Tableau. I also use Python libraries like Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, OpenCV, and MediaPipe.
+
+Q: What are some key projects you have built?
+A: I have built several projects, including:
+- An interactive Hospital Management Dashboard and Employee Performance Dashboard using Power BI and Advanced Excel.
+- A gesture-controlled live mouse system using Python, OpenCV, and MediaPipe.
+- A machine learning classification project for brain tumor detection from MRI scans.
+- An end-to-end health monitoring system called ByteLife for the aging population using Python, Flask, and machine learning.
+
+Q: What kind of roles are you looking for?
+A: I am actively applying and interviewing for Data Analyst, Business Analyst, Business Intelligence, Quality Assurance, and entry-level software development roles.
